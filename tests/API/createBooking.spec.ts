@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { BookingService } from '../../src/services/bookingService';
 import { generateBookingData } from '../../src/data/booking';
+import { AuthService } from '../../src/services/authService';
 
 test('create booking with valid data', async ({ request }) => {
     const bookingService = new BookingService(request);
